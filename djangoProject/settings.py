@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-*8$*vt+cdbt&6b&yy4#40ty+&fg+wy#a-f(b70tr0b*dcdo@t0
 DEBUG = True
 
 ALLOWED_HOSTS = []
+DOMAIN_NAME = 'http://localhost:8000'
 
 # Application definition
 
@@ -136,4 +137,9 @@ LOGOUT_REDIRECT_URL = '/'
 
 # Sending emails
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.yandex.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'djangoprojectmy@yandex.ru'
+EMAIL_HOST_PASSWORD = '******'
+EMAIL_USE_SSL = True
